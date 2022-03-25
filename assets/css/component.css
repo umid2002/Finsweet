@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+*,*::after, *::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+section, header, footer {
+  padding: 0 15px;
+}
+
+@media (min-width: 575.98px){
+  section, header, footer {
+    padding: 0 calc(50vw - 270px);
+  }
+}
+
+@media (min-width: 767.98px){
+  section, header, footer {
+    padding: 0 calc(50vw - 360px);
+  }
+}
+
+@media (min-width: 991.98px) {
+  section, header, footer {
+    padding: 0 calc(50vw - 480px);
+  }
+}
+
+@media (min-width: 1199.98px){
+  section, header, footer {
+    padding: 0 calc(50vw - 590px);
+  }
+}
+
+
+/* nav start */
+header{
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  padding-bottom: 96px;
+}
+.logo{
+  font-weight: 700;
+  font-size: 35px;
+  color: black;
+}
+nav{
+  margin-left: auto;
+  transition: left 0.4s ease;
+}
+.nav__link{
+  margin-right: 32px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #1D2130;
+}
+.free__course{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #FFFFFF;
+  background: #1D2130;
+  border-radius: 12px;
+  padding: 16px 40px;
+  transition: left 0.4s ease;
+}
+.fa-regular{
+  display: none;
+  z-index: 10;
+}
+@media screen and (max-width: 991.98px){
+  .fa-regular{
+    display: block;
+    margin-left: auto;
+  }
+  nav{
+    position: absolute;
+    left: -100%;
+    top: 0;
+    display: flex;
+    padding: 120px 15%;
+    flex-direction: column;
+    bottom: 0;
+    width: 30vw;
+    background-color: rgb(233, 233, 233);
+  }
+  .nav__link{
+    padding: 10px;
+  }
+  .free__course{
+    position: absolute;
+    left: -100%;
+    top: 0;
+    margin: 410px 15%;
+    padding: 10px 15px;
+  }
+  nav.show, .free__course.show{
+    left: 0;
+  }
+  .logo{
+    z-index: 10;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  nav{
+    width: 40%;
+  }
+  .logo{
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  nav {
+    width: 100%;
+  }
+  .logo{
+    font-size: 25px;
+  }
+}
+/* Blur box */
+.blur__box
+{
+  background: radial-gradient(483.9% 2719.65% at -49.5% -250%, #D798E1 17.55%, #9BFFA5 27.56%, #AED3FF 49.89%, #C9D4EF 56.53%, #CACFFA 65.69%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  filter: blur(200px);
+  position: absolute;
+  width: 524px;
+  height: 496px;
+  right: 40%;
+  top: 40%;
+  z-index: -1;
+}
