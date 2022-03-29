@@ -1,0 +1,37 @@
+.form__box{
+  display: flex;
+}
+.button__box{
+  display: flex;
+  width: 270px;
+  margin: 35px auto;
+  height: 65px;
+  position: relative;
+  background: #E0E4FC;
+  border-radius: 20px;
+}
+.toggle__month,
+.toggle__year{
+  padding: 10px 40px 10px 50px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+  text-align: center;
+  color: #FFFFFF;
+}
+.toggle__year{
+  padding-left: 40px;
+}
+#btn{
+  top: 6px;
+  left: 0;
+  margin-left: 5px;
+  position: absolute;
+  width: 52%;
+  height: 52px;
+  background: #1D2130;
+  border-radius: 30px;
+  transition: 0.5s;
+}

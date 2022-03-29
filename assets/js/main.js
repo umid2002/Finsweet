@@ -27,3 +27,14 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+// Toggle Price HTML
+
+let btn = document.querySelector("#btn")
+
+function leftClick (){
+  btn.style.left = "0"
+}
+function rightClick (){
+  btn.style.left = "120px"
+}
