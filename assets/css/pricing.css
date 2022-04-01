@@ -1,10 +1,10 @@
 .box__blur{
   background: radial-gradient(483.9% 2719.65% at -49.5% -250%, #D798E1 17.55%, #9BFFA5 27.56%, #AED3FF 49.89%, #C9D4EF 56.53%, #CACFFA 65.69%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-  filter: blur(600px);
+  filter: blur(500px);
   position: absolute;
   width: 556px;
   height: 556px;
-  right: 877px;
+  right: 477px;
   top: 465px;
   z-index: -1;
 }
@@ -15,7 +15,7 @@
 /* style codes */
 
 header{
-  margin-bottom: 96px;
+  margin-bottom: 36px;
 }
 .pricing{
   position: relative;
@@ -256,4 +256,181 @@ section.question{
 .question__hide p{
   margin-top: 35px;
   display: none;
+}
+@media screen and (max-width: 1199.98px) {
+  .pricing__title{
+    font-size: 50px;
+  }
+  .pricing__subtitle{
+    font-size: 17px;
+  }
+  .price__menu{
+    grid-template-columns: 1fr 1fr;
+  }
+  .price__menu{
+    grid-gap: 100px;
+
+  }
+  .price__box:last-child{
+    position: relative;
+    top: 0;
+    left: 62%;
+  }
+  .questions__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .question__title{
+    width: 80%;
+    margin: 0 auto 30px;
+    text-align: center;
+  }
+  .question__subtitle{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .pricing__title{
+    font-size: 45px;
+  }
+  .pricing__subtitle{
+    font-size: 15px;
+  }
+  .form__box{
+    margin-bottom: 25px;
+  }
+  .price__menu{
+    grid-gap: 35px;
+  }
+  .price__box:last-child{
+    left: 55%;
+  }
+  .question__title{
+    font-size: 40px;
+  }
+  .question__subtitle{
+    font-size: 14px;
+  }
+  .question__item{
+    padding: 25px;
+  }
+  .question__item-title{
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+  .question__item-subtitle{
+    font-size: 13px;
+  }
+  .question__item.question__hide{
+    height: auto;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  header{
+    padding-bottom: 50px;
+  }
+  .pricing__title{
+    width: 80%;
+    font-size: 40px;
+  }
+  .price__menu{
+    grid-template-columns: 1fr;
+  }
+  .price__box{
+    width: 80%;
+    margin: auto;
+  }
+  .price__box:last-child{
+    left: 0;
+  }
+  .box__blur:last-child{
+    top: 1800px;
+  }
+  .button__box{
+    height: 50px;
+  }
+  #btn{
+    padding: 10px;
+    height: 38px;
+  }
+  .price__top-title{
+    font-size: 30px;
+  }
+  .price__top-subtitle{
+    font-size: 12px;
+  }
+  .price__list-item span{
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .price__list{
+    margin-bottom: 10px;
+  }
+  .price__bottom-text{
+    margin-bottom: 25px;
+  }
+  .question__title{
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 575.98px){
+  .price__box{
+    padding: 35px 25px;
+    width: 80%;
+  }
+  .question__item-title{
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 419.98px){
+  .pricing__title{
+    font-size: 35px;
+    width: 100%;
+  }
+  .pricing__subtitle{
+    font-size: 13px;
+    width: 80%;
+  }
+  .price__box{
+    padding: 20px;
+  }
+  .price__top-title{
+    font-size: 20px;
+  }
+  .price__top-subtitle{
+    font-size: 11px;
+  }
+  .price__bottom-price{
+    font-size: 25px;
+  }
+  .price__list-item span{
+    font-size: 13px;
+  }
+  .price__bottom-text{
+    font-size: 12px;
+  }
+  .price__bottom-link{
+    font-size: 13px;
+    padding: 0;
+  }
+  .questions__container{
+    padding: 15px;
+  }
+  .question__title{
+    font-size: 30px;
+    width: 100%;
+  }
+  .question__subtitle{
+    font-size: 14px;
+    width: 100%;
+  }
+
+}
+@media screen and (max-width: 359.98px){
+
 }
