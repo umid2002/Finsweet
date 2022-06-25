@@ -1,0 +1,57 @@
+.blog{
+  margin-bottom: 80px;
+}
+.blog__title{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 110%;
+  text-align: center;
+  color: #1D2130;
+  margin-bottom: 24px;
+}
+.blog__subtitle{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: #1D2130;
+  width: 795px;
+  margin: 0 auto 55px;
+}
+.blog__content{
+  border: 1px solid #D8D8D8;
+  box-sizing: border-box;
+  border-radius: 24px;
+  padding: 64px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0 48px;
+}
+.content__announcement{
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 23px;
+}
+.content__title{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 100%;
+  color: #1D2130;
+  margin-bottom: 24px;
+}
+.content__subtitle{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #6D6E76;
+  margin-bottom: 32px;
+}
+
