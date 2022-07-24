@@ -38,3 +38,17 @@ function leftClick (){
 function rightClick (){
   btn.style.left = "120px"
 }
+
+
+// Card hide show 
+
+const elQuestionList = document.querySelector(".question__list");
+const elQuestionItem = document.querySelector(".question__item");
+const elFaSolid = document.querySelector(".fa-solid");
+
+elQuestionList.addEventListener("click", (evt) => {
+  if(evt.target.matches(".question__item")){
+    evt.target.classList.toggle("question__hide")
+    console.log(evt.target);
+  }
+})

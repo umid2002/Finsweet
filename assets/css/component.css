@@ -10,6 +10,7 @@ body{
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+  user-select: none;
 }
 li{
   list-style-type: none;
@@ -135,6 +136,7 @@ nav{
   }
   nav.show, .free__course.show{
     left: 0;
+    z-index: 10;
   }
   .logo{
     z-index: 10;
@@ -357,8 +359,9 @@ footer{
 .footer__info{
   display: flex;
   justify-content: center;
-  position: relative;
   align-items: center;
+  position: relative;
+  padding-bottom: 64px;
 }
 .footer__copyright{
   display: block;
@@ -383,7 +386,7 @@ footer{
   content: '';
   position: absolute;
   left: 0;
-  top: 45%;
+  top: 12%;
   background-color: red;
   width: 30%;
   height: 1px;
@@ -394,7 +397,7 @@ footer{
   content: '';
   position: absolute;
   right: 0;
-  top: 45%;
+  top: 12%;
   background-color: red;
   width: 31%;
   height: 1px;

@@ -228,6 +228,7 @@ section.question{
   background-color: white;
   border-radius: 24px;
   padding: 40px;
+  transition: height 2s ease-in-out;
 }
 .question__item-title{
   font-family: 'Roboto';
@@ -239,6 +240,8 @@ section.question{
   margin-bottom: 16px;
   display: flex;
   justify-content: space-between;
+  pointer-events: none;
+  user-select: none;
 }
 .question__item-subtitle{
   font-family: 'Roboto';
@@ -256,6 +259,8 @@ section.question{
 .question__hide p{
   margin-top: 35px;
   display: none;
+  transition: all 2s ease-in-out;
+
 }
 @media screen and (max-width: 1199.98px) {
   .pricing__title{

@@ -45,7 +45,7 @@
   font-weight: 400;
   font-size: 16px;
   color: #1D2130;
-  opacity: 0.4;
+  opacity: 0.9;
   padding-left: 24px;
   border: none;
   transition: box-shadow 0.3s ease;
@@ -572,6 +572,24 @@ section.info{
   flex-direction: column;
   align-items: center;
 }
+.testimonials__content-item:hover{
+  box-shadow: 1px 1px 4px black;
+  animation: mymove 1s infinite;
+}
+
+@keyframes mymove {
+  0% {
+  transform: rotate(0.5deg);
+  }
+  50%{
+    transform: rotate(-0.5deg);
+  }
+  100% {
+  transform: rotate(0.5deg);
+  }
+}
+
+
 .testimonials__content-title{
   font-family: 'Roboto';
   font-style: normal;
